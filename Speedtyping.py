@@ -90,6 +90,7 @@ while "a":
         print("You made a mistake")
         if combo > 1:
             print(f"You had a combo of {combo}🔥")
+        waitTime = 1
         choice = int(input("Press 1 if you want to play again and 2 if not : "))
         if choice == 1:
             pass
