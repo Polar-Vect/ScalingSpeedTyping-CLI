@@ -1,5 +1,5 @@
 
-# ⌨️ TypeRush-CLI
+# ⌨️ SpeedTyping-CLI
 
 > **Fast. Accurate. Clean.**  
 > A minimalist terminal typing trainer designed to push your speed to the limit.
@@ -7,7 +7,7 @@
 ---
 
 ## 📝 Description
-**TypeRush-CLI** is a high-speed typing challenge for your terminal. It presents random sentences that you must type as quickly and accurately as possible. The goal is to maintain a **Combo Streak** without making a single mistake.
+**SpeedTyping-CLI** is a high-speed typing challenge for your terminal. It presents random sentences that you must type as quickly and accurately as possible. The goal is to maintain a **Combo Streak** without making a single mistake.
 
 ## 🛠 Technologies
 The project is built with **Python 3**, focusing on standard libraries for maximum compatibility:
