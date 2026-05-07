@@ -4,7 +4,7 @@ import random
 print("This Game was created by Adrian-weber7 and extended by Polar")
 
 
-
+waitTime = 1
 combo = 0
 
 while "a":
@@ -58,35 +58,35 @@ while "a":
         "Efficiency is doing things right; effectiveness is doing right things.",
         "The world is a book and those who do not travel read only one page.",
         "Congratulations, you have finished the typing test!"]
-
-    satz =random.choice(rand)
-    print("")
-    print(f"Your sentence : {satz}")
+    
+    sentence = random.choice(rand)
+    
+    print(f"Your sentence : {sentence}")
     print("3")
-    time.sleep(1)
+    time.sleep(waitTime)
     print("2")
-    time.sleep(1)
+    time.sleep(waitTime)
     print("1")
-    time.sleep(1)
+    time.sleep(waitTime)
     print("GO !")
-    anfang_time = time.time()
-
-
+    starting_time = time.time()
 
     user = input("Type here : ").lower()
     end_time=time.time()
-    if user == satz.lower():
-        dauer = end_time - anfang_time
-        print(f"Your Time is : {dauer:.2f} Seconds")
+    if user == sentence.lower():
+        duration = end_time - starting_time
+        print(f"Your Time is : {duration:.2f} Seconds")
         print("Everything is correct!")
         time.sleep(0.7)
         print("New round !")
         time.sleep(2)
         combo += 1
+        if waitTime > 0.05:
+            waitTime -= 0.05
 
     else:
-        dauer = end_time - anfang_time
-        print(f"Your Time is : {dauer:.2f} Seconds")
+        duration = end_time - starting_time
+        print(f"Your Time is : {duration:.2f} Seconds")
         print("You made a mistake")
         if combo > 1:
             print(f"You had a combo of {combo}🔥")
